@@ -11,13 +11,12 @@ const TriviaAnswerCard = styled(Card)({
   margin:5,
   padding:5,
   display:"flex",
-
 });
 
 //Part that displays the question
 const QuestionCard = styled(Card)({
   width:"auto",
-  height:250,
+  minHeight:250,
   margin:25,
   padding:15,
   textAlign:"center",
@@ -53,13 +52,12 @@ function TriviaGame(props) {
       <Card
       sx={{
         height:"95%",
-        width:"90%",
+        width:"75vw",
         margin:"auto",
         padding:"25px",
         textAlign:"center",
         alignItems:"center",
         maxWidth:"850px",
-        minWidth:"450px"
 
       }}>
         <Typography variant='h2' sx={{backgroundColor:"primary.main", color:"common.white"}}>TRIVIA</Typography>
@@ -69,12 +67,13 @@ function TriviaGame(props) {
         <CardContent sx={{
               padding: 1,
               backgroundColor: "primary.main",
+              
             }}>
           <QuestionCard>
             <Typography sx={{marginBottom:"10px"}}>Category: {location.state.questions[index].Category} -  Difficulty: {location.state.questions[index].Difficulty}</Typography>
-            <Typography variant="h4" >{index + 1}. {location.state.questions[index].QuestionText}</Typography></QuestionCard>
+            <Typography variant="h5" >{index + 1}. {location.state.questions[index].QuestionText}</Typography></QuestionCard>
           <Box sx={{ width: 'auto',  margin:"25px",}}>
-          <Grid container rowSpacing={1} columnSpacing={2}>
+          <Grid container rowSpacing={1} columnSpacing={2} >
             <Grid item>
               <TriviaAnswerCard >
                 <CardActionArea data-testid='good-click' onClick={ () => {
