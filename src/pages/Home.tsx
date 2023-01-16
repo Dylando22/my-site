@@ -91,8 +91,8 @@ export default function Home() {
       <Box
         sx={{
           display: "flex",
-          justifyContent: { sm: "center", md: "space-around" },
-          flexDirection: { sm: "column", md: "row" },
+          justifyContent: { xs: "center", md: "space-around" },
+          flexDirection: { xs: "column", md: "row" },
           alignItems: "center",
           maxWidth: "900px",
           margin: "auto",

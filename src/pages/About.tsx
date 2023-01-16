@@ -79,6 +79,7 @@ export default function About() {
       <Box
         sx={{
           display: "flex",
+          margin: "auto",
           flexDirection: { xs: "column", sm: "row" },
           justifyContent: "space-around",
           maxWidth: "700px",

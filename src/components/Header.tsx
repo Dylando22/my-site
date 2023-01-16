@@ -5,6 +5,7 @@ import {
   Close,
   // Phone,
   Message,
+  Article,
 } from "@mui/icons-material";
 import {
   Box,
@@ -17,6 +18,7 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useState } from "react";
+import "../css/Global.css";
 
 interface Props {
   mode: string;
@@ -37,7 +39,10 @@ export default function Header({ mode, setMode }: Props) {
       }}
     >
       <Typography
-        sx={{ fontSize: 50, margin: { xs: "auto", sm: "15px" } }}
+        sx={{
+          fontSize: { xs: 35, sm: 50 },
+          margin: { xs: "auto", sm: "15px" },
+        }}
         variant="h2"
       >
         Dylan Spencer
@@ -114,7 +119,7 @@ export default function Header({ mode, setMode }: Props) {
               <ListItemIcon>
                 <MailOutline />
               </ListItemIcon>
-              <Typography>Email: dyl2elite@gmail.com</Typography>
+              <Typography>dyl2elite@gmail.com</Typography>
             </ListItemButton>
             {/* <ListItem>
               <ListItemIcon>
@@ -132,6 +137,14 @@ export default function Header({ mode, setMode }: Props) {
               </ListItemIcon>
               <Typography>Message</Typography>
             </ListItemButton>
+            <a download="dylan_spencer.pdf" href="./media/resume.pdf">
+              <ListItemButton>
+                <ListItemIcon>
+                  <Article />
+                </ListItemIcon>
+                <Typography>Download Resume</Typography>
+              </ListItemButton>
+            </a>
           </List>
         </Box>
       </Modal>

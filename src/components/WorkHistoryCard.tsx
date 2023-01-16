@@ -21,7 +21,7 @@ export default function WorkHistoryCard({
         marginTop: "25px",
         padding: "10px",
         borderRadius: "15px",
-        width: { xs: "350px", sm: "450px", md: "750px" },
+        width: { xs: "300px", sm: "450px", md: "750px" },
       }}
     >
       <CardHeader
@@ -36,7 +36,7 @@ export default function WorkHistoryCard({
       />
       <CardContent>
         <Typography marginTop="10px" variant="h5">
-          Position: {position}
+          {position}
         </Typography>
         <Typography marginTop="20px">{content}</Typography>
       </CardContent>
