@@ -1,0 +1,22 @@
+.family-pic {
+    width: 350px;
+    height: 350px;
+}
+
+.profile-pic {
+    width: 100%;
+    align-self: center;
+    border-radius: 15%;
+}
+
+.project-pic {
+    max-width: 250px;
+    height: 130px;
+    border-radius: 5px;
+}
+
+.about-pic {
+    height: 100%;
+    max-height: 500px;
+    max-width: 400px;
+}
