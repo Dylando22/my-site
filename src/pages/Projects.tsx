@@ -73,7 +73,7 @@ export default function Projects() {
             title="RAPTOR"
             image={Raptor}
             description="A website I helped develop while working at Hill Air Force Base. Worked on frontend and setup the backend. Not accessible to the public."
-            path="/projects"
+            path="/my-site/projects"
           />
         </Grid>
       </Box>
