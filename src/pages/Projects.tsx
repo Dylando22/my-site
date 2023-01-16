@@ -2,7 +2,7 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import { Box, Grid, Typography } from "@mui/material";
 
-import Chad from "../assets/chad_logo.png";
+// import Chad from "../assets/chad_logo.png";
 import Old from "../assets/old-web.png";
 import Calc from "../assets/calculator.png";
 import Weather from "../assets/weather.jpg";
@@ -37,7 +37,7 @@ export default function Projects() {
             title="Trivia Game"
             image={Trivia}
             description="A Trivia game I developed for training. Calls from a trivia API with random questions. Click to Play"
-            path="/trivia-home"
+            path="/my-site/trivia-home"
           />
           {/* <ProjectCard
             title="Chad Coleman Films"

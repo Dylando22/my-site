@@ -1,11 +1,4 @@
-import {
-  Box,
-  Card,
-  CardActionArea,
-  List,
-  ListItemText,
-  Typography,
-} from "@mui/material";
+import { Box, Card, CardActionArea, Typography } from "@mui/material";
 import React, { useState } from "react";
 import Pic from "../assets/full.jpg";
 import "../css/Global.css";
@@ -20,7 +13,7 @@ export default function About() {
       switch (id) {
         case 1:
           setGuess(1);
-          setAnswer("Correct");
+          setAnswer("Correct, I got married at 21");
           setHasGuessed(true);
           break;
         case 2:
@@ -86,15 +79,21 @@ export default function About() {
       <Box
         sx={{
           display: "flex",
+          flexDirection: { xs: "column", sm: "row" },
           justifyContent: "space-around",
-          margin: "auto",
           maxWidth: "700px",
         }}
       >
-        <Card>
+        <Card
+          sx={{
+            width: "200px",
+            margin: "auto",
+            marginTop: "10px",
+            marginBottom: "10px",
+          }}
+        >
           <CardActionArea
             sx={{
-              width: "200px",
               padding: "20px",
               textAlign: "center",
               backgroundColor: guess === 1 ? "green" : "lightskyblue",
@@ -104,7 +103,14 @@ export default function About() {
             <Typography>I Got married at 20 years old</Typography>
           </CardActionArea>
         </Card>
-        <Card>
+        <Card
+          sx={{
+            width: "200px",
+            margin: "auto",
+            marginTop: "10px",
+            marginBottom: "10px",
+          }}
+        >
           <CardActionArea
             sx={{
               width: "200px",
@@ -117,7 +123,14 @@ export default function About() {
             <Typography>I have never broken a bone</Typography>
           </CardActionArea>
         </Card>
-        <Card>
+        <Card
+          sx={{
+            width: "200px",
+            margin: "auto",
+            marginTop: "10px",
+            marginBottom: "10px",
+          }}
+        >
           <CardActionArea
             sx={{
               width: "200px",

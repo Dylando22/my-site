@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material";
 // You can find readable color examples at https://mui.com/material-ui/customization/color/#main-content
-import { deepOrange, grey, red } from "@mui/material/colors";
+import { grey, red } from "@mui/material/colors";
 
 // This is the mui function to create your own custom palette of colors.
 export const darkTheme = createTheme({

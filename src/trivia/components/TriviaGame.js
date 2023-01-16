@@ -174,7 +174,7 @@ function TriviaGame(props) {
     </CardContent>
   </Card>
   <Box display="flex" justifyContent="center" padding={1} width="100%" >
-    <Button variant="contained" sx={{marginRight:"30px"}} onClick={() => {navigate("/trivia-home");}}>
+    <Button variant="contained" sx={{marginRight:"30px"}} onClick={() => {navigate("/my-site/trivia-home");}}>
       <HomeIcon />
     </Button>
     <Button variant="contained" sx={{marginRight:"30px"}} onClick={() => {
@@ -188,7 +188,7 @@ function TriviaGame(props) {
         setAnswerText("Waiting for guess....");
         }
         else{
-          navigate('/trivia-game-over',{state: 
+          navigate('/my-site/trivia-game-over',{state: 
             {Score: score, 
             playerName: location.state.playerName, 
             Total: QuestionNumber,

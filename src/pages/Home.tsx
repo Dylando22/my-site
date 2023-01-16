@@ -47,7 +47,11 @@ export default function Home() {
           alignItems: { xs: "center", md: "normal" },
         }}
       >
-        <img className="family-pic" src={require("../assets/family.jpg")}></img>
+        <img
+          alt="family pic"
+          className="family-pic"
+          src={require("../assets/family.jpg")}
+        ></img>
         <Box>
           <Typography
             fontSize={{ sm: 16, md: 18, lg: 20 }}

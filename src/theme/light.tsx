@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material";
 // You can find readable color examples at https://mui.com/material-ui/customization/color/#main-content
-import { blue, grey, indigo } from "@mui/material/colors";
+import { grey, indigo } from "@mui/material/colors";
 
 export const lightTheme = createTheme({
   palette: {

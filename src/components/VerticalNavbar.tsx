@@ -7,8 +7,6 @@ import {
   WorkOutline,
   Person4Outlined,
   Apps,
-  HomeMaxOutlined,
-  Home,
   HomeOutlined,
 } from "@mui/icons-material";
 import {
@@ -105,25 +103,25 @@ export default function Hello() {
                   </Typography>
                 </Box>
               </ListItem>
-              <ListItemButton onClick={() => navigate("/")}>
+              <ListItemButton onClick={() => navigate("/my-site")}>
                 <HomeOutlined fontSize="large" />
                 <Typography marginLeft="10px" variant="h5">
                   Home
                 </Typography>
               </ListItemButton>
-              <ListItemButton onClick={() => navigate("/about")}>
+              <ListItemButton onClick={() => navigate("/my-site/about")}>
                 <Person4Outlined fontSize="large" />
                 <Typography marginLeft="10px" variant="h5">
                   About Me
                 </Typography>
               </ListItemButton>
-              <ListItemButton onClick={() => navigate("/history")}>
+              <ListItemButton onClick={() => navigate("/my-site/history")}>
                 <WorkOutline fontSize="large" />
                 <Typography marginLeft="10px" variant="h5">
                   Work History
                 </Typography>
               </ListItemButton>
-              <ListItemButton onClick={() => navigate("/projects")}>
+              <ListItemButton onClick={() => navigate("/my-site/projects")}>
                 <Apps fontSize="large" />
                 <Typography marginLeft="10px" variant="h5">
                   Projects

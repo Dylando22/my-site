@@ -9,9 +9,9 @@ import About from "./pages/About";
 import History from "./pages/History";
 import Projects from "./pages/Projects";
 import Home from "./pages/Home";
-import TriviaMenu from "./src/trivia/components/TriviaMenu";
-import TriviaGame from "./src/trivia/components/TriviaGame";
-import TriviaGameOver from "./src/trivia/components/TriviaGameOver";
+import TriviaMenu from "./trivia/components/TriviaMenu";
+import TriviaGame from "./trivia/components/TriviaGame";
+import TriviaGameOver from "./trivia/components/TriviaGameOver";
 
 export default function App() {
   // This keeps track of the state of the page, if it's in Dark Mode or Light Mode,
@@ -33,13 +33,15 @@ export default function App() {
           <Box sx={{ marginLeft: "60px" }}>
             <Header mode={mode} setMode={setMode} />
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/history" element={<History />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/trivia-home" element={<TriviaMenu />} />
-              <Route path="/trivia-game" element={<TriviaGame />} />
-              <Route path="/trivia-game-over" element={<TriviaGameOver />} />
+              <Route path="my-site">
+                <Route index element={<Home />} />
+                <Route path="about" element={<About />} />
+                <Route path="history" element={<History />} />
+                <Route path="projects" element={<Projects />} />
+                <Route path="trivia-home" element={<TriviaMenu />} />
+                <Route path="trivia-game" element={<TriviaGame />} />
+                <Route path="trivia-game-over" element={<TriviaGameOver />} />
+              </Route>
             </Routes>
           </Box>
         </Router>
