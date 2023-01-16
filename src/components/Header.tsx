@@ -36,38 +36,50 @@ export default function Header({ mode, setMode }: Props) {
         justifyContent: "space-between",
         alignItems: "center",
         backgroundColor: "secondary.main",
+        paddingTop: "10px",
+        paddingBottom: "10px",
       }}
     >
       <Typography
         sx={{
-          fontSize: { xs: 35, sm: 50 },
-          margin: { xs: "auto", sm: "15px" },
+          fontSize: { xs: 30, sm: 50 },
+          margin: "5px",
         }}
         variant="h2"
       >
         Dylan Spencer
       </Typography>
-      <Box>
+      <Box display="flex">
         <IconButton onClick={() => setOpen(true)}>
-          <MailOutline fontSize="large" />
+          <MailOutline
+            sx={{
+              fontSize: { xs: 30, sm: 40 },
+            }}
+          />
         </IconButton>
         {mode === "light" ? (
           <IconButton
-            sx={{ margin: "15px" }}
             onClick={(e) => {
               setMode(mode === "light" ? "dark" : "light");
             }}
           >
-            <LightMode />
+            <LightMode
+              sx={{
+                fontSize: { xs: 30, sm: 40 },
+              }}
+            />
           </IconButton>
         ) : (
           <IconButton
-            sx={{ margin: "15px" }}
             onClick={(e) => {
               setMode(mode === "light" ? "dark" : "light");
             }}
           >
-            <ModeNight />
+            <ModeNight
+              sx={{
+                fontSize: { xs: 30, sm: 40 },
+              }}
+            />
           </IconButton>
         )}
       </Box>
