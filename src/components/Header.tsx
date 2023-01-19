@@ -5,6 +5,7 @@ import {
   Close,
   // Phone,
   Message,
+  Article,
 } from "@mui/icons-material";
 import {
   Box,
@@ -17,6 +18,7 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useState } from "react";
+import "../css/Global.css";
 
 interface Props {
   mode: string;
@@ -34,35 +36,50 @@ export default function Header({ mode, setMode }: Props) {
         justifyContent: "space-between",
         alignItems: "center",
         backgroundColor: "secondary.main",
+        paddingTop: "10px",
+        paddingBottom: "10px",
       }}
     >
       <Typography
-        sx={{ fontSize: 50, margin: { xs: "auto", sm: "15px" } }}
+        sx={{
+          fontSize: { xs: 30, sm: 50 },
+          margin: "5px",
+        }}
         variant="h2"
       >
         Dylan Spencer
       </Typography>
-      <Box>
+      <Box display="flex">
         <IconButton onClick={() => setOpen(true)}>
-          <MailOutline fontSize="large" />
+          <MailOutline
+            sx={{
+              fontSize: { xs: 30, sm: 40 },
+            }}
+          />
         </IconButton>
         {mode === "light" ? (
           <IconButton
-            sx={{ margin: "15px" }}
             onClick={(e) => {
               setMode(mode === "light" ? "dark" : "light");
             }}
           >
-            <LightMode />
+            <LightMode
+              sx={{
+                fontSize: { xs: 30, sm: 40 },
+              }}
+            />
           </IconButton>
         ) : (
           <IconButton
-            sx={{ margin: "15px" }}
             onClick={(e) => {
               setMode(mode === "light" ? "dark" : "light");
             }}
           >
-            <ModeNight />
+            <ModeNight
+              sx={{
+                fontSize: { xs: 30, sm: 40 },
+              }}
+            />
           </IconButton>
         )}
       </Box>
@@ -114,7 +131,7 @@ export default function Header({ mode, setMode }: Props) {
               <ListItemIcon>
                 <MailOutline />
               </ListItemIcon>
-              <Typography>Email: dyl2elite@gmail.com</Typography>
+              <Typography>dyl2elite@gmail.com</Typography>
             </ListItemButton>
             {/* <ListItem>
               <ListItemIcon>
@@ -132,6 +149,14 @@ export default function Header({ mode, setMode }: Props) {
               </ListItemIcon>
               <Typography>Message</Typography>
             </ListItemButton>
+            <a download="dylan_spencer.pdf" href="./media/resume.pdf">
+              <ListItemButton>
+                <ListItemIcon>
+                  <Article />
+                </ListItemIcon>
+                <Typography>Download Resume</Typography>
+              </ListItemButton>
+            </a>
           </List>
         </Box>
       </Modal>

@@ -11,7 +11,7 @@ export const darkTheme = createTheme({
       white: "#fff", //text thats white on light mode
     },
     primary: {
-      light: grey[50],
+      light: red[300],
       dark: red[900],
       main: red[700], //main color background
     },

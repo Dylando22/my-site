@@ -10,7 +10,7 @@ export const lightTheme = createTheme({
       white: "#fff", //text thats white on light mode
     },
     primary: {
-      light: "",
+      light: indigo[300],
       dark: indigo[900], //none
       main: indigo[700], //main color background
     },

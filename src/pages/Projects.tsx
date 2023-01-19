@@ -2,7 +2,7 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import { Box, Grid, Typography } from "@mui/material";
 
-// import Chad from "../assets/chad_logo.png";
+import Chad from "../assets/chad_logo.png";
 import Old from "../assets/old-web.png";
 import Calc from "../assets/calculator.png";
 import Weather from "../assets/weather.jpg";
@@ -39,12 +39,12 @@ export default function Projects() {
             description="A Trivia game I developed for training. Calls from a trivia API with random questions. Click to Play"
             path="/my-site/trivia-home"
           />
-          {/* <ProjectCard
+          <ProjectCard
             title="Chad Coleman Films"
             image={Chad}
-            description="The website for a local company Chad Coleman Films. Chad Hired me to re design his current website. Currently waiting to be deployed."
-            path="https://www.chadcolemanfilms.com/"
-          /> */}
+            description="The website for a local company Chad Coleman Films. Chad Hired me to re design his current website. Currently under development."
+            path="https://dylando22.github.io/coleman_films"
+          />
           <ProjectCard
             title="Old Website"
             image={Old}
@@ -73,7 +73,7 @@ export default function Projects() {
             title="RAPTOR"
             image={Raptor}
             description="A website I helped develop while working at Hill Air Force Base. Worked on frontend and setup the backend. Not accessible to the public."
-            path="/projects"
+            path="/my-site/projects"
           />
         </Grid>
       </Box>

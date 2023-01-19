@@ -31,7 +31,7 @@ const workHistoryData: {
   },
   {
     location: "Walmart Distribution Center",
-    position: "Case slot warehouse worker",
+    position: "Case lot warehouse worker",
     content: `Worked on the conveyor belt throwing packages to trailers to be shipped to Walmarts around Utah. `,
     dateRange: "March 2020 - August 2020",
   },

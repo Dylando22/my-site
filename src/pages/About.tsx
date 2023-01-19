@@ -60,7 +60,7 @@ export default function About() {
           <Typography variant="h6">GPA: 3.86</Typography>
           <Typography marginTop="20px">
             Hi, I'm Dylan Spencer. I love coding and developing apps or
-            websites. My core values consist of having integrity, begin honest,
+            websites. My core values consist of having integrity, being honest,
             doing quality hard work and being a trustworthy team member. Some
             fun things about me are that I love sports, playing games, doing
             puzzles and solving problems. I have had lots of experience with
@@ -79,6 +79,7 @@ export default function About() {
       <Box
         sx={{
           display: "flex",
+          margin: "auto",
           flexDirection: { xs: "column", sm: "row" },
           justifyContent: "space-around",
           maxWidth: "700px",
@@ -96,7 +97,7 @@ export default function About() {
             sx={{
               padding: "20px",
               textAlign: "center",
-              backgroundColor: guess === 1 ? "green" : "lightskyblue",
+              backgroundColor: guess === 1 ? "green" : "primary.light",
             }}
             onClick={() => checkGuess(1)}
           >
@@ -116,7 +117,7 @@ export default function About() {
               width: "200px",
               padding: "20px",
               textAlign: "center",
-              backgroundColor: guess === 2 ? "red" : "lightskyblue",
+              backgroundColor: guess === 2 ? "red" : "primary.light",
             }}
             onClick={() => checkGuess(2)}
           >
@@ -136,7 +137,7 @@ export default function About() {
               width: "200px",
               padding: "20px",
               textAlign: "center",
-              backgroundColor: guess === 3 ? "red" : "lightskyblue",
+              backgroundColor: guess === 3 ? "red" : "primary.light",
             }}
             onClick={() => checkGuess(3)}
           >
