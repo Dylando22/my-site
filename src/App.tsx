@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import VerticalNavbar from "./components/VerticalNavbar";
 import { darkTheme } from "./theme/dark";
 import { lightTheme } from "./theme/light";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import History from "./pages/History";
 import Projects from "./pages/Projects";
@@ -28,12 +28,12 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <Box bgcolor="background.default" color={"text.primary"}>
-        <Router>
+        <Router basename="/">
           <VerticalNavbar />
           <Box sx={{ marginLeft: "60px" }}>
             <Header mode={mode} setMode={setMode} />
             <Routes>
-              <Route path="my-site">
+              <Route path="/">
                 <Route index element={<Home />} />
                 <Route path="about" element={<About />} />
                 <Route path="history" element={<History />} />

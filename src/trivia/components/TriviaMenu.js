@@ -117,7 +117,7 @@ function TriviaMenu(props) {
                 Options: options,
             }
           }
-          navigate("/my-site/trivia-game", {state:
+          navigate("/trivia-game", {state:
             {questions: Questions,
             questionCount: userInput.questionCount,
             playerName: userInput.name,

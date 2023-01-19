@@ -37,7 +37,7 @@ export default function Projects() {
             title="Trivia Game"
             image={Trivia}
             description="A Trivia game I developed for training. Calls from a trivia API with random questions. Click to Play"
-            path="/my-site/trivia-home"
+            path="/trivia-home"
           />
           <ProjectCard
             title="Chad Coleman Films"
@@ -73,7 +73,7 @@ export default function Projects() {
             title="RAPTOR"
             image={Raptor}
             description="A website I helped develop while working at Hill Air Force Base. Worked on frontend and setup the backend. Not accessible to the public."
-            path="/my-site/projects"
+            path="/projects"
           />
         </Grid>
       </Box>

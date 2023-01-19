@@ -103,25 +103,25 @@ export default function Hello() {
                   </Typography>
                 </Box>
               </ListItem>
-              <ListItemButton onClick={() => navigate("/my-site")}>
+              <ListItemButton onClick={() => navigate("/")}>
                 <HomeOutlined fontSize="large" />
                 <Typography marginLeft="10px" variant="h5">
                   Home
                 </Typography>
               </ListItemButton>
-              <ListItemButton onClick={() => navigate("/my-site/about")}>
+              <ListItemButton onClick={() => navigate("/about")}>
                 <Person4Outlined fontSize="large" />
                 <Typography marginLeft="10px" variant="h5">
                   About Me
                 </Typography>
               </ListItemButton>
-              <ListItemButton onClick={() => navigate("/my-site/history")}>
+              <ListItemButton onClick={() => navigate("/history")}>
                 <WorkOutline fontSize="large" />
                 <Typography marginLeft="10px" variant="h5">
                   Work History
                 </Typography>
               </ListItemButton>
-              <ListItemButton onClick={() => navigate("/my-site/projects")}>
+              <ListItemButton onClick={() => navigate("/projects")}>
                 <Apps fontSize="large" />
                 <Typography marginLeft="10px" variant="h5">
                   Projects
