@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import TriviaMenu from "./trivia/components/TriviaMenu";
 import TriviaGame from "./trivia/components/TriviaGame";
 import TriviaGameOver from "./trivia/components/TriviaGameOver";
+import Quotes from "./quotes/Quotes";
 
 export default function App() {
   // This keeps track of the state of the page, if it's in Dark Mode or Light Mode,
@@ -41,6 +42,7 @@ export default function App() {
                 <Route path="trivia-home" element={<TriviaMenu />} />
                 <Route path="trivia-game" element={<TriviaGame />} />
                 <Route path="trivia-game-over" element={<TriviaGameOver />} />
+                <Route path="quotes" element={<Quotes />} />
               </Route>
             </Routes>
           </Box>

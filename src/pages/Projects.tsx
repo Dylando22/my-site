@@ -9,6 +9,7 @@ import Weather from "../assets/weather.jpg";
 import Frappy from "../assets/frappy.jpg";
 import Raptor from "../assets/raptor.png";
 import Trivia from "../assets/trivia.jpg";
+import Quotes from "../assets/quotes.png";
 
 export default function Projects() {
   return (
@@ -38,6 +39,12 @@ export default function Projects() {
             image={Trivia}
             description="A Trivia game I developed for training. Calls from a trivia API with random questions. Click to Play"
             path="/trivia-home"
+          />
+          <ProjectCard
+            title="Quotes API"
+            image={Quotes}
+            description="A Quotes searcher built for a class project."
+            path="/quotes"
           />
           <ProjectCard
             title="Chad Coleman Films"
