@@ -10,6 +10,14 @@ import Frappy from "../assets/frappy.jpg";
 import Raptor from "../assets/raptor.png";
 import Trivia from "../assets/trivia.jpg";
 import Quotes from "../assets/quotes.png";
+import Galaga from "../assets/galagaTitle.png";
+import StarShooter from "../assets/startShooter.png";
+import Lines from "../assets/Lines.png";
+import Nuke from "../assets/nuke.png";
+import MultiAgent from "../assets/multiAgent.png";
+import GameCenter from "../assets/gameCenter.png";
+import Blocks from "../assets/blocks.png";
+import Maze from "../assets/maze.png";
 
 export default function Projects() {
   return (
@@ -35,15 +43,59 @@ export default function Projects() {
           xs={9}
         >
           <ProjectCard
+            title="GALAGA"
+            image={Galaga}
+            description="Final Project from my game development class. Enjoy"
+            path="https://dylando22.github.io/galaga-static"
+          />
+          <ProjectCard
+            title="Zombie Breakout"
+            image={Nuke}
+            description="A Project from my game development class. Zombie breakout style"
+            path="https://dylando22.github.io/zombie-game"
+          />
+          <ProjectCard
+            title="Blocks"
+            image={Blocks}
+            description="A Project from my game development class. This was a midterm and was completed in less than 5 hours"
+            path="https://dylando22.github.io/falling-blocks"
+          />
+          <ProjectCard
+            title="Random Maze Game"
+            image={Maze}
+            description="A Project from my game development class. This was a random maze generated game"
+            path="https://dylando22.github.io/school-maze-runner"
+          />
+          <ProjectCard
+            title="Simple Animation"
+            image={StarShooter}
+            description="An animation I made in my graphics class. We did 3D animations, but this was 
+            a simple 2D animation. We built all the line drawing from scratch."
+            path="https://dylando22.github.io/star-shooter"
+          />
+          <ProjectCard
+            title="Line Drawing"
+            image={Lines}
+            description="Interactive Line drawing demo with a heartbeat animation made for my graphics class."
+            path="https://dylando22.github.io/line-drawing"
+          />
+          <ProjectCard
             title="Trivia Game"
             image={Trivia}
             description="A Trivia game I developed for training. Calls from a trivia API with random questions. Click to Play"
             path="/trivia-home"
           />
           <ProjectCard
+            title="Gamers 3000"
+            image={GameCenter}
+            description="Final Project from my web development class. We made an arcade website using firebase and Next.js 
+            to interactively play games. Firebase is currently down."
+            path="https://4610-final.vercel.app/"
+          />
+          <ProjectCard
             title="Quotes API"
             image={Quotes}
-            description="A Quotes searcher built for a class project."
+            description="A Quotes searcher built for a class project. The CSS does not translate over very well."
             path="/quotes"
           />
           <ProjectCard
@@ -53,9 +105,15 @@ export default function Projects() {
             path="https://dylando22.github.io/coleman_films"
           />
           <ProjectCard
+            title="Warehouse Simulation"
+            image={MultiAgent}
+            description="Repo for my multi agent systems final group project. We analyzed this simulation of how a multi-agent system would work in a warehouse.  "
+            path="https://github.com/Dylando22/warehouse-sim"
+          />
+          <ProjectCard
             title="Old Website"
             image={Old}
-            description="The website for a local company Chad Coleman Films. Chad Hired me to re design his current website."
+            description="My old resume website built completely from HTML and CSS"
             path="https://dylando22.github.io/"
           />
           <ProjectCard

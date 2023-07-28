@@ -11,12 +11,14 @@ export default function Home() {
     "Problem Solving",
     "Frontend web dev.",
     "Backend web dev.",
+    "Automation Testing",
   ];
   const languages = [
     "HTML/CSS",
     "React.js",
     "TypeScript",
     "JavaScript",
+    "WebDriverIo",
     "Java",
     "Python",
     "C++",
@@ -59,11 +61,11 @@ export default function Home() {
             variant="body1"
           >
             Dylan Spencer is a Computer Science Major currently studying at Utah
-            State University. He is interested in Web Development, Cyber
-            Security and UX/UI design. Dylan plans to finish his undergraduate
-            with a Bachelors degree in Computer Science in the Fall of 2023. He
-            is currently working as a software engineering intern at Hill Air
-            Force Base.
+            State University. He is currently working as a software development
+            engineer intern at Family Search. He is interested in Web
+            Development, UX/UI design principles, Disc Golf and Fishing. Dylan
+            plans to finish his undergraduate with a Bachelors degree in
+            Computer Science in the Fall of 2023.
           </Typography>
           <Typography
             fontSize={{ sm: 16, md: 18, lg: 20 }}

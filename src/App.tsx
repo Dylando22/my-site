@@ -43,6 +43,7 @@ export default function App() {
                 <Route path="trivia-game" element={<TriviaGame />} />
                 <Route path="trivia-game-over" element={<TriviaGameOver />} />
                 <Route path="quotes" element={<Quotes />} />
+                {/* <Routse path="galaga" element={<Galaga />} /> */}
               </Route>
             </Routes>
           </Box>

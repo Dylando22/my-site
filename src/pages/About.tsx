@@ -61,12 +61,11 @@ export default function About() {
           <Typography marginTop="20px">
             Hi, I'm Dylan Spencer. I love coding and developing apps or
             websites. My core values consist of having integrity, being honest,
-            doing quality hard work and being a trustworthy team member. Some
-            fun things about me are that I love sports, playing games, doing
-            puzzles and solving problems. I have had lots of experience with
-            frontend and backend web development. Let me know if there are any
-            projects that I can help work on or if you have any questions for
-            me.
+            doing quality hard work and being a helpful team member. Some fun
+            things about me are that I love sports, playing games, doing puzzles
+            and solving problems. I have had lots of experience with frontend
+            and backend web development. Let me know if there are any projects
+            that I can help work on or if you have any questions for me.
           </Typography>
         </Box>
       </Box>
