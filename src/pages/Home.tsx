@@ -7,6 +7,8 @@ import Chad from "../assets/chad_logo.png";
 import Trivia from "../assets/trivia.jpg";
 import Galaga from "../assets/galagaTitle.png";
 import ProjectCard from "../components/ProjectCard";
+import CurrentWorkCard from "../components/CurrentWorkCard";
+import FamilySearchLogo from "../assets/familySearch.png";
 export default function Home() {
   const softSkills = ["Teamwork", "Communication", "Software Documentation"];
   const techSkills = [
@@ -61,12 +63,11 @@ export default function Home() {
             variant="body1"
           >
             Dylan Spencer is a Computer Science Major currently studying at Utah
-            State University. He is currently working as a software development
-            engineer intern at Family Search. He is interested in Full Stack Web
-            Development, UX/UI design principles, game development, and sports.
-            Dylan plans to finish his undergraduate with a Bachelors degree in
-            Computer Science with a minor in Spanish in the Fall of 2023. He
-            currently has a security clearance and could start working full time
+            State University. He is interested in Full Stack Web Development,
+            UX/UI design principles, game development, and sports. Dylan plans
+            to finish his undergraduate with a Bachelors degree in Computer
+            Science with a minor in Spanish in the Fall of 2023. He currently
+            has a security clearance and could start working full time
             immediately due to short class schedule.
           </Typography>
           <Typography
@@ -75,15 +76,38 @@ export default function Home() {
             marginLeft="15px"
             variant="body1"
           >
-            I built this webpage as a resume or portfolio for easily accessible
-            information about Dylan, his work history, skills, and a look into
-            some projects he has worked on. It was developed using React with
-            TypeScript and although this site does not draw from a database,
-            Dylan does have experience working with PostgreSQL, Express.js,
-            Node.js, and Django.
+            Dylan built this webpage as a resume or portfolio for easily
+            accessible information about Dylan, his work history, skills, and a
+            look into some projects he has worked on. It was developed using
+            React with TypeScript and although this site does not draw from a
+            database, Dylan does have experience working with PostgreSQL,
+            Express.js, Node.js, and Django.
           </Typography>
         </Box>
       </Box>
+      <Typography
+        variant="h4"
+        sx={{
+          margin: "25px",
+        }}
+      >
+        Current Job
+      </Typography>
+      <CurrentWorkCard
+        location="FamilySearch"
+        dateRange="2023 | current"
+        content="Dylan is Currently working at Family Search and a Software Developer Intern. He works on the Global Campaigns team as a QA. He has mainly been developing complete test automation for multiple different campaign pages, while validating data for emails."
+        position="Software Developer in Test"
+        responsibilities={[
+          "Developing Automation testing with Node.js and WebdriverIo",
+          "Write code to read very large data files and parse the data to get needed information",
+          "Work in an Agile Scrum environment",
+          "Do manual testing and data verification testing for multiple campaigns.",
+          "Testing Emails",
+          "Frontend testing for different web pages",
+        ]}
+        image={FamilySearchLogo}
+      />
       <Typography
         variant="h4"
         sx={{

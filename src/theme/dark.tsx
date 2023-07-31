@@ -41,7 +41,7 @@ export const darkTheme = createTheme({
     //   // main: grey[400],
     // },
     background: {
-      // paper: "",
+      paper: "#666666",
       default: "#333333",
     },
   },
