@@ -1,8 +1,12 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import SkillsCard from "../components/SkillsCard";
 import "../css/Global.css";
-
+import SelfPhoto from "../assets/full.jpg";
+import Chad from "../assets/chad_logo.png";
+import Trivia from "../assets/trivia.jpg";
+import Galaga from "../assets/galagaTitle.png";
+import ProjectCard from "../components/ProjectCard";
 export default function Home() {
   const softSkills = ["Teamwork", "Communication", "Software Documentation"];
   const techSkills = [
@@ -49,11 +53,7 @@ export default function Home() {
           alignItems: { xs: "center", md: "normal" },
         }}
       >
-        <img
-          alt="family pic"
-          className="family-pic"
-          src={require("../assets/family.jpg")}
-        ></img>
+        <img alt="self-pic" className="family-pic" src={SelfPhoto}></img>
         <Box>
           <Typography
             fontSize={{ sm: 16, md: 18, lg: 20 }}
@@ -62,10 +62,12 @@ export default function Home() {
           >
             Dylan Spencer is a Computer Science Major currently studying at Utah
             State University. He is currently working as a software development
-            engineer intern at Family Search. He is interested in Web
-            Development, UX/UI design principles, Disc Golf and Fishing. Dylan
-            plans to finish his undergraduate with a Bachelors degree in
-            Computer Science in the Fall of 2023.
+            engineer intern at Family Search. He is interested in Full Stack Web
+            Development, UX/UI design principles, game development, and sports.
+            Dylan plans to finish his undergraduate with a Bachelors degree in
+            Computer Science with a minor in Spanish in the Fall of 2023. He
+            currently has a security clearance and could start working full time
+            immediately due to short class schedule.
           </Typography>
           <Typography
             fontSize={{ sm: 16, md: 18, lg: 20 }}
@@ -73,12 +75,12 @@ export default function Home() {
             marginLeft="15px"
             variant="body1"
           >
-            This webpage was built as a resume or portfolio for easily
-            accessible information about Dylan, his work history, skills, and a
-            look into some projects he has worked on. It was developed using
-            React with TypeScript and although this site does not draw from a
-            database, Dylan does have experience working with PostgreSQL,
-            Express.js, Node.js, and Django.
+            I built this webpage as a resume or portfolio for easily accessible
+            information about Dylan, his work history, skills, and a look into
+            some projects he has worked on. It was developed using React with
+            TypeScript and although this site does not draw from a database,
+            Dylan does have experience working with PostgreSQL, Express.js,
+            Node.js, and Django.
           </Typography>
         </Box>
       </Box>
@@ -103,6 +105,51 @@ export default function Home() {
         <SkillsCard title="Languages" list={languages} />
         <SkillsCard title="Technical Skills" list={techSkills} />
         <SkillsCard title="Soft Skills" list={softSkills} />
+      </Box>
+      <Typography
+        variant="h4"
+        sx={{
+          margin: "25px",
+        }}
+      >
+        Favorite Projects
+      </Typography>
+      <Box
+        display="flex"
+        justifyContent="center"
+        flexGrow={1}
+        paddingTop={5}
+        bgcolor="darkgrey"
+      >
+        <Grid
+          container
+          spacing={1}
+          padding={1}
+          justifyContent="center"
+          direction="row"
+          gap={8}
+          item
+          xs={9}
+        >
+          <ProjectCard
+            title="GALAGA"
+            image={Galaga}
+            description="Final Project from my game development class. Enjoy"
+            path="https://dylando22.github.io/galaga-static"
+          />
+          <ProjectCard
+            title="Trivia Game"
+            image={Trivia}
+            description="A Trivia game I developed for training. Calls from a trivia API with random questions. Click to Play"
+            path="/trivia-home"
+          />
+          <ProjectCard
+            title="Chad Coleman Films"
+            image={Chad}
+            description="The website for a local company Chad Coleman Films. Chad Hired me to re design his current website. Currently under development."
+            path="https://dylando22.github.io/coleman_films"
+          />
+        </Grid>
       </Box>
     </Box>
   );

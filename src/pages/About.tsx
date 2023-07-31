@@ -1,6 +1,6 @@
 import { Box, Card, CardActionArea, Typography } from "@mui/material";
 import React, { useState } from "react";
-import Pic from "../assets/full.jpg";
+import Pic from "../assets/family2.jpg";
 import "../css/Global.css";
 
 export default function About() {
@@ -54,18 +54,20 @@ export default function About() {
         <Box marginLeft="5px">
           <Typography variant="h3">Dylan Spencer</Typography>
           <Typography variant="h5">
-            Student / Utah State University / December 2023
+            Student | Utah State University | December 2023
           </Typography>
           <Typography variant="h6">Age: 24</Typography>
-          <Typography variant="h6">GPA: 3.86</Typography>
+          <Typography variant="h6">GPA: 3.85</Typography>
           <Typography marginTop="20px">
-            Hi, I'm Dylan Spencer. I love coding and developing apps or
+            Hi, I'm Dylan Spencer. I'm from Stansbury Park Utah and my wife and
+            I have a little baby boy. I love coding and developing apps or
             websites. My core values consist of having integrity, being honest,
             doing quality hard work and being a helpful team member. Some fun
             things about me are that I love sports, playing games, doing puzzles
-            and solving problems. I have had lots of experience with frontend
-            and backend web development. Let me know if there are any projects
-            that I can help work on or if you have any questions for me.
+            and solving problems. My recent hobbies include Disc Golf and
+            Fishing. I have had lots of experience with frontend and backend web
+            development. Let me know if there are any projects that I can help
+            work on or if you have any questions for me.
           </Typography>
         </Box>
       </Box>

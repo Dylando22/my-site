@@ -2,14 +2,14 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import { Box, Grid, Typography } from "@mui/material";
 
-import Chad from "../assets/chad_logo.png";
 import Old from "../assets/old-web.png";
 import Calc from "../assets/calculator.png";
 import Weather from "../assets/weather.jpg";
 import Frappy from "../assets/frappy.jpg";
 import Raptor from "../assets/raptor.png";
-import Trivia from "../assets/trivia.jpg";
 import Quotes from "../assets/quotes.png";
+import Chad from "../assets/chad_logo.png";
+import Trivia from "../assets/trivia.jpg";
 import Galaga from "../assets/galagaTitle.png";
 import StarShooter from "../assets/startShooter.png";
 import Lines from "../assets/Lines.png";

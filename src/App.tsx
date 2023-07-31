@@ -13,6 +13,7 @@ import TriviaMenu from "./trivia/components/TriviaMenu";
 import TriviaGame from "./trivia/components/TriviaGame";
 import TriviaGameOver from "./trivia/components/TriviaGameOver";
 import Quotes from "./quotes/Quotes";
+import Footer from "./components/Footer";
 
 export default function App() {
   // This keeps track of the state of the page, if it's in Dark Mode or Light Mode,
@@ -46,6 +47,7 @@ export default function App() {
                 {/* <Routse path="galaga" element={<Galaga />} /> */}
               </Route>
             </Routes>
+            <Footer />
           </Box>
         </Router>
       </Box>
