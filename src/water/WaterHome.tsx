@@ -71,7 +71,6 @@ export default function WaterHome() {
       .then((resp) => resp.json())
       .then((data) => {
         let le = data.value.timeSeries[0].values[0].value.length;
-        console.log(data.value.timeSeries[0].values[0].value[le - 1]);
         let latestData = data.value.timeSeries[0].values[0].value[le - 1];
         let d = new Date(latestData.dateTime);
         setLatestData({
@@ -103,7 +102,6 @@ export default function WaterHome() {
       .then((resp) => resp.json())
       .then((data) => {
         let le = data.value.timeSeries[0].values[0].value.length;
-        console.log(data.value.timeSeries[0].values[0].value[le - 1]);
         let latestData = data.value.timeSeries[0].values[0].value[le - 1];
         let d = new Date(latestData.dateTime);
         setLoganData({
@@ -134,7 +132,6 @@ export default function WaterHome() {
       .then((resp) => resp.json())
       .then((data) => {
         let le = data.value.timeSeries[0].values[0].value.length;
-        console.log(data.value.timeSeries[0].values[0].value[le - 1]);
         let latestData = data.value.timeSeries[0].values[0].value[le - 1];
         let d = new Date(latestData.dateTime);
         setHyrumData({
@@ -160,7 +157,9 @@ export default function WaterHome() {
 
   return (
     <Box>
-      <Typography variant="h3">Water Level Statistics Finder</Typography>
+      <Typography marginLeft="10px" variant="h3">
+        Water Level Statistics Finder
+      </Typography>
       <Box
         sx={{
           display: "flex",
@@ -171,13 +170,14 @@ export default function WaterHome() {
         }}
       >
         <Typography>
-          Enter in site Id for the body of water and see the latest depths.
+          Enter in site Id for the body of water and see the latest depths. All
+          data is provided by waterservices.usgu.gov
         </Typography>
         <Input
           placeholder="Id ( Ex. 10108400)"
           type="text"
           sx={{
-            width: "350px",
+            width: "250px",
             margin: "10px",
           }}
           value={currentNumber}
@@ -207,8 +207,7 @@ export default function WaterHome() {
           <TableContainer
             component={Card}
             sx={{
-              margin: 2,
-              marginLeft: "50px",
+              margin: 1,
               width: { xs: 300, sm: 500, md: "auto" },
             }}
           >
@@ -244,8 +243,7 @@ export default function WaterHome() {
         <TableContainer
           component={Card}
           sx={{
-            margin: 2,
-            marginLeft: "50px",
+            margin: 1,
             width: { xs: 300, sm: 500, md: "auto" },
           }}
         >
@@ -280,8 +278,7 @@ export default function WaterHome() {
         <TableContainer
           component={Card}
           sx={{
-            margin: 2,
-            marginLeft: "50px",
+            margin: 1,
             width: { xs: 300, sm: 500, md: "auto" },
           }}
         >
