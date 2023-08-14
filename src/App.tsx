@@ -14,6 +14,8 @@ import TriviaGame from "./trivia/components/TriviaGame";
 import TriviaGameOver from "./trivia/components/TriviaGameOver";
 import Quotes from "./quotes/Quotes";
 import Footer from "./components/Footer";
+import WaterHome from "./water/WaterHome";
+import ScrollToTop from "./ScrollToTop";
 
 export default function App() {
   // This keeps track of the state of the page, if it's in Dark Mode or Light Mode,
@@ -33,6 +35,7 @@ export default function App() {
         <Router basename="/">
           <VerticalNavbar />
           <Box sx={{ marginLeft: "60px" }}>
+            <ScrollToTop />
             <Header mode={mode} setMode={setMode} />
             <Routes>
               <Route path="/">
@@ -44,7 +47,7 @@ export default function App() {
                 <Route path="trivia-game" element={<TriviaGame />} />
                 <Route path="trivia-game-over" element={<TriviaGameOver />} />
                 <Route path="quotes" element={<Quotes />} />
-                {/* <Routse path="galaga" element={<Galaga />} /> */}
+                <Route path="water-stats" element={<WaterHome />} />
               </Route>
             </Routes>
             <Footer />

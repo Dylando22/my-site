@@ -18,6 +18,7 @@ import MultiAgent from "../assets/multiAgent.png";
 import GameCenter from "../assets/gameCenter.png";
 import Blocks from "../assets/blocks.png";
 import Maze from "../assets/maze.png";
+import Water from "../assets/water.jpg";
 
 export default function Projects() {
   return (
@@ -84,6 +85,12 @@ export default function Projects() {
             image={Trivia}
             description="A Trivia game I developed for training. Calls from a trivia API with random questions. Click to Play"
             path="/trivia-home"
+          />
+          <ProjectCard
+            title="Water Depths"
+            image={Water}
+            description="A webpage I made for a friend needing water depth statistics. Data is provided from USGS."
+            path="/water-stats"
           />
           <ProjectCard
             title="Gamers 3000"
