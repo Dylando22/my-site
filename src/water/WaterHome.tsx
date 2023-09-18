@@ -37,12 +37,12 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 }));
 
 interface RiverData {
-  depth: number;
+  flow: number;
   time: string;
 }
 
 interface BigData {
-  depth: number;
+  flow: number;
   date: string;
   time: string;
 }
@@ -74,19 +74,19 @@ export default function WaterHome() {
         let latestData = data.value.timeSeries[0].values[0].value[le - 1];
         let d = new Date(latestData.dateTime);
         setLatestData({
-          depth: latestData.value,
+          flow: latestData.value,
           time: d.toDateString() + " at " + d.toLocaleTimeString(),
         });
         setCurrentRiver(data.value.timeSeries[0].sourceInfo.siteName);
         let tempArray: BigData[] = [];
         for (let i = le - 1; i >= 0; i -= 48) {
           let tempData = data.value.timeSeries[0].values[0].value[i];
-          let depth = tempData.value;
+          let flow = tempData.value;
           let d = new Date(tempData.dateTime);
           let time = d.toLocaleTimeString();
           let date = d.toLocaleDateString();
           tempArray.push({
-            depth,
+            flow,
             time,
             date,
           });
@@ -105,18 +105,18 @@ export default function WaterHome() {
         let latestData = data.value.timeSeries[0].values[0].value[le - 1];
         let d = new Date(latestData.dateTime);
         setLoganData({
-          depth: latestData.value,
+          flow: latestData.value,
           time: d.toDateString() + " at " + d.toLocaleTimeString(),
         });
         let tempArray: BigData[] = [];
         for (let i = le - 1; i >= 0; i -= 48) {
           let tempData = data.value.timeSeries[0].values[0].value[i];
-          let depth = tempData.value;
+          let flow = tempData.value;
           let d = new Date(tempData.dateTime);
           let time = d.toLocaleTimeString();
           let date = d.toLocaleDateString();
           tempArray.push({
-            depth,
+            flow,
             time,
             date,
           });
@@ -135,18 +135,18 @@ export default function WaterHome() {
         let latestData = data.value.timeSeries[0].values[0].value[le - 1];
         let d = new Date(latestData.dateTime);
         setHyrumData({
-          depth: latestData.value,
+          flow: latestData.value,
           time: d.toDateString() + " at " + d.toLocaleTimeString(),
         });
         let tempArray: BigData[] = [];
         for (let i = le - 1; i >= 0; i -= 48) {
           let tempData = data.value.timeSeries[0].values[0].value[i];
-          let depth = tempData.value;
+          let flow = tempData.value;
           let d = new Date(tempData.dateTime);
           let time = d.toLocaleTimeString();
           let date = d.toLocaleDateString();
           tempArray.push({
-            depth,
+            flow,
             time,
             date,
           });
@@ -158,7 +158,7 @@ export default function WaterHome() {
   return (
     <Box>
       <Typography marginLeft="10px" variant="h3">
-        Water Level Statistics Finder
+        Water Flow Statistics Finder
       </Typography>
       <Box
         sx={{
@@ -170,7 +170,7 @@ export default function WaterHome() {
         }}
       >
         <Typography>
-          Enter in site Id for the body of water and see the latest depths. All
+          Enter in site Id for the body of water and see the latest flow. All
           data is provided by waterservices.usgu.gov
         </Typography>
         <Input
@@ -203,7 +203,7 @@ export default function WaterHome() {
         >
           <Typography variant="h4">{currentRiver}</Typography>
           <Typography>{latestData?.time}</Typography>
-          <Typography>{latestData?.depth} ft sq</Typography>
+          <Typography>{latestData?.flow} ft&sup3;/s</Typography>
           <TableContainer
             component={Card}
             sx={{
@@ -216,7 +216,7 @@ export default function WaterHome() {
                 <TableRow>
                   <StyledTableCellHead>Date</StyledTableCellHead>
                   <StyledTableCellHead>Time</StyledTableCellHead>
-                  <StyledTableCellHead>Depth</StyledTableCellHead>
+                  <StyledTableCellHead>Flow</StyledTableCellHead>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -224,7 +224,9 @@ export default function WaterHome() {
                   <StyledTableRow>
                     <StyledTableCellBody>{entry.date}</StyledTableCellBody>
                     <StyledTableCellBody>{entry.time}</StyledTableCellBody>
-                    <StyledTableCellBody>{entry.depth}</StyledTableCellBody>
+                    <StyledTableCellBody>
+                      {entry.flow} ft&sup3;/s
+                    </StyledTableCellBody>
                   </StyledTableRow>
                 ))}
               </TableBody>
@@ -239,7 +241,7 @@ export default function WaterHome() {
       >
         <Typography variant="h4">Logan River</Typography>
         <Typography>{loganData?.time}</Typography>
-        <Typography>{loganData?.depth} ft Sq</Typography>
+        <Typography>{loganData?.flow} ft&sup3;/s</Typography>
         <TableContainer
           component={Card}
           sx={{
@@ -252,7 +254,7 @@ export default function WaterHome() {
               <TableRow>
                 <StyledTableCellHead>Date</StyledTableCellHead>
                 <StyledTableCellHead>Time</StyledTableCellHead>
-                <StyledTableCellHead>Depth</StyledTableCellHead>
+                <StyledTableCellHead>Flow</StyledTableCellHead>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -260,7 +262,9 @@ export default function WaterHome() {
                 <StyledTableRow>
                   <StyledTableCellBody>{entry.date}</StyledTableCellBody>
                   <StyledTableCellBody>{entry.time}</StyledTableCellBody>
-                  <StyledTableCellBody>{entry.depth}</StyledTableCellBody>
+                  <StyledTableCellBody>
+                    {entry.flow} ft&sup3;/s
+                  </StyledTableCellBody>
                 </StyledTableRow>
               ))}
             </TableBody>
@@ -274,7 +278,7 @@ export default function WaterHome() {
       >
         <Typography variant="h4">Hyrum Rserviour</Typography>
         <Typography>{hyrumData?.time}</Typography>
-        <Typography>{hyrumData?.depth} ft Sq</Typography>
+        <Typography>{hyrumData?.flow} ft&sup3;/s</Typography>
         <TableContainer
           component={Card}
           sx={{
@@ -287,7 +291,7 @@ export default function WaterHome() {
               <TableRow>
                 <StyledTableCellHead>Date</StyledTableCellHead>
                 <StyledTableCellHead>Time</StyledTableCellHead>
-                <StyledTableCellHead>Depth</StyledTableCellHead>
+                <StyledTableCellHead>Flow</StyledTableCellHead>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -295,7 +299,9 @@ export default function WaterHome() {
                 <StyledTableRow>
                   <StyledTableCellBody>{entry.date}</StyledTableCellBody>
                   <StyledTableCellBody>{entry.time}</StyledTableCellBody>
-                  <StyledTableCellBody>{entry.depth}</StyledTableCellBody>
+                  <StyledTableCellBody>
+                    {entry.flow} ft&sup3;/s
+                  </StyledTableCellBody>
                 </StyledTableRow>
               ))}
             </TableBody>

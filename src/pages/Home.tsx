@@ -64,11 +64,11 @@ export default function Home() {
           >
             Dylan Spencer is a Computer Science Major currently studying at Utah
             State University. He is interested in Full Stack Web Development,
-            UX/UI design principles, game development, and sports. Dylan plans
-            to finish his undergraduate with a Bachelors degree in Computer
-            Science with a minor in Spanish in the Fall of 2023. He currently
-            has a security clearance and could start working full time
-            immediately due to short class schedule.
+            Software Engineering, game development, and sports. Dylan plans to
+            finish his undergraduate with a Bachelors degree in Computer Science
+            with a minor in Spanish in the Fall of 2023. He currently has a
+            security clearance and could start working full time immediately due
+            to short class schedule.
           </Typography>
           <Typography
             fontSize={{ sm: 16, md: 18, lg: 20 }}

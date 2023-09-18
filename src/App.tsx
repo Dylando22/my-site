@@ -16,6 +16,7 @@ import Quotes from "./quotes/Quotes";
 import Footer from "./components/Footer";
 import WaterHome from "./water/WaterHome";
 import ScrollToTop from "./ScrollToTop";
+import BudgetHome from "./budget/BudgetHome";
 
 export default function App() {
   // This keeps track of the state of the page, if it's in Dark Mode or Light Mode,
@@ -48,6 +49,7 @@ export default function App() {
                 <Route path="trivia-game-over" element={<TriviaGameOver />} />
                 <Route path="quotes" element={<Quotes />} />
                 <Route path="water-stats" element={<WaterHome />} />
+                <Route path="budget" element={<BudgetHome />} />
               </Route>
             </Routes>
             <Footer />

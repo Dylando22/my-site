@@ -87,11 +87,17 @@ export default function Projects() {
             path="/trivia-home"
           />
           <ProjectCard
-            title="Water Depths"
+            title="Water Flow"
             image={Water}
-            description="A webpage I made for a friend needing water depth statistics. Data is provided from USGS."
+            description="A webpage I made for a friend needing water flow statistics. Data is provided from USGS."
             path="/water-stats"
           />
+          {/* <ProjectCard
+            title="Budget Maker"
+            image={Water}
+            description="A web app that takes in inputs and categories and exports a downloadable excel budget."
+            path="/budget"
+          /> */}
           <ProjectCard
             title="Gamers 3000"
             image={GameCenter}
