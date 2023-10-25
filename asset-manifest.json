@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-site/static/css/main.5b173e9b.css",
-    "main.js": "/my-site/static/js/main.67c623a9.js",
+    "main.css": "/my-site/static/css/main.e8267b28.css",
+    "main.js": "/my-site/static/js/main.fd2ba0c0.js",
     "static/media/family2.jpg": "/my-site/static/media/family2.10acaa51eda32def2531.jpg",
     "static/media/profile.png": "/my-site/static/media/profile.4dcde82fbd67f59eb4f1.png",
     "static/media/full.jpg": "/my-site/static/media/full.92d043b2d2cb48044240.jpg",
@@ -9,6 +9,7 @@
     "static/media/multiAgent.png": "/my-site/static/media/multiAgent.771d7b4cca16c9fa447e.png",
     "static/media/galagaTitle.png": "/my-site/static/media/galagaTitle.d4b76a0a1c869ea3eccd.png",
     "static/media/gameCenter.png": "/my-site/static/media/gameCenter.6c5c82840778fdd7dc31.png",
+    "static/media/dyl_logo_1.png": "/my-site/static/media/dyl_logo_1.6b3613f4037a76eaa8ff.png",
     "static/media/old-web.png": "/my-site/static/media/old-web.f622f661feecbf7afe32.png",
     "static/media/maze.png": "/my-site/static/media/maze.ddc8bfa6ad8e0a694780.png",
     "static/media/frappy.jpg": "/my-site/static/media/frappy.94f886f91d8d266cba53.jpg",
@@ -18,11 +19,11 @@
     "static/media/chad_logo.png": "/my-site/static/media/chad_logo.31cd10af067cf27d1025.png",
     "static/media/nuke.png": "/my-site/static/media/nuke.6a19ae519d7a6277a708.png",
     "index.html": "/my-site/index.html",
-    "main.5b173e9b.css.map": "/my-site/static/css/main.5b173e9b.css.map",
-    "main.67c623a9.js.map": "/my-site/static/js/main.67c623a9.js.map"
+    "main.e8267b28.css.map": "/my-site/static/css/main.e8267b28.css.map",
+    "main.fd2ba0c0.js.map": "/my-site/static/js/main.fd2ba0c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b173e9b.css",
-    "static/js/main.67c623a9.js"
+    "static/css/main.e8267b28.css",
+    "static/js/main.fd2ba0c0.js"
   ]
 }
