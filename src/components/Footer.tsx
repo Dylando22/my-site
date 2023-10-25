@@ -1,6 +1,7 @@
 import { Facebook, GitHub, Instagram, LinkedIn } from "@mui/icons-material";
-import { IconButton, Typography } from "@mui/material";
+import { IconButton } from "@mui/material";
 import { Box } from "@mui/system";
+import Logo from "../assets/dyl_logo_1.png";
 
 export default function Footer() {
   return (
@@ -21,7 +22,7 @@ export default function Footer() {
           display: { xs: "flex", sm: "none" },
         }}
       >
-        <Typography>Dylan Spencer</Typography>
+        <img src={Logo} alt="Dylan Spencer Logo" className="logo-pic"></img>
       </Box>
       <Box
         sx={{
@@ -54,13 +55,7 @@ export default function Footer() {
             display: { xs: "none", sm: "flex" },
           }}
         >
-          <Typography
-            sx={{
-              marginTop: "10px",
-            }}
-          >
-            Dylan Spencer
-          </Typography>
+          <img src={Logo} alt="Dylan Spencer Logo" className="logo-pic"></img>
         </Box>
         <IconButton
           onClick={() => {

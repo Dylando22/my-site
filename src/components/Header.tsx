@@ -3,6 +3,7 @@ import { Box, Switch, Typography } from "@mui/material";
 import React from "react";
 import "../css/Global.css";
 import HeaderLink from "./HeaderLink";
+import Logo from "../assets/dyl_logo_1.png";
 
 interface Props {
   mode: string;
@@ -36,15 +37,20 @@ export default function Header({
         color: "white",
       }}
     >
-      <Typography
-        sx={{
-          // fontSize: { xs: 30, sm: 50 },
-          margin: "5px",
-        }}
-        variant="h5"
-      >
-        Dylan Spencer
-      </Typography>
+      <Box sx={{ display: "flex", alignItems: "center" }}>
+        <img src={Logo} alt="Dylan Spencer Logo" className="header-logo"></img>
+
+        <Typography
+          sx={{
+            // fontSize: { xs: 30, sm: 50 },
+            margin: "5px",
+            display: { xs: "none", md: "block" },
+          }}
+          variant="h5"
+        >
+          Dylan Spencer
+        </Typography>
+      </Box>
       <Box
         display="flex"
         sx={{

@@ -40,4 +40,13 @@ a {
 
 .active {
     color: blue
+    
+}
+
+.logo-pic {
+    width: 125px;
+}
+
+.header-logo {
+    width: 60px;
 }
