@@ -1,6 +1,18 @@
 import { createTheme } from "@mui/material";
 // You can find readable color examples at https://mui.com/material-ui/customization/color/#main-content
-import { grey, indigo } from "@mui/material/colors";
+import { blueGrey, grey, indigo } from "@mui/material/colors";
+
+declare module "@mui/material/styles/createPalette" {
+  interface RandomColorOptions {
+    activeLink?: string;
+    unactiveLink?: string;
+    cardBackground?: string;
+  }
+
+  interface PaletteOptions {
+    random?: RandomColorOptions;
+  }
+}
 
 export const lightTheme = createTheme({
   palette: {
@@ -18,6 +30,11 @@ export const lightTheme = createTheme({
       light: grey[50], //none
       dark: grey[400], //searchBar Background
       main: grey[300], //CardBackground
+    },
+    random: {
+      activeLink: blueGrey[50],
+      unactiveLink: blueGrey[300],
+      cardBackground: "white",
     },
     // error: {
     //   // light: "",

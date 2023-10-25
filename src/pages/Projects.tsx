@@ -92,12 +92,12 @@ export default function Projects() {
             description="A webpage I made for a friend needing water flow statistics. Data is provided from USGS."
             path="/water-stats"
           />
-          {/* <ProjectCard
+          <ProjectCard
             title="Budget Maker"
             image={Water}
             description="A web app that takes in inputs and categories and exports a downloadable excel budget."
             path="/budget"
-          /> */}
+          />
           <ProjectCard
             title="Gamers 3000"
             image={GameCenter}

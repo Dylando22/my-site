@@ -10,7 +10,15 @@ import ProjectCard from "../components/ProjectCard";
 import CurrentWorkCard from "../components/CurrentWorkCard";
 import FamilySearchLogo from "../assets/familySearch.png";
 export default function Home() {
-  const softSkills = ["Teamwork", "Communication", "Software Documentation"];
+  const softSkills = [
+    "Teamwork",
+    "Communication",
+    "Software Documentation",
+    "Creativity",
+    "Adaptability",
+    "Teamwork",
+    "Detail Oriented",
+  ];
   const techSkills = [
     "Agile/Scrum",
     "Git Version Control",
@@ -18,11 +26,15 @@ export default function Home() {
     "Frontend web dev.",
     "Backend web dev.",
     "Automation Testing",
+    "Linux/Windows",
+    "Node.js",
+    "Docker",
+    "Django",
   ];
   const languages = [
     "HTML/CSS",
-    "React.js",
     "TypeScript",
+    "React.js",
     "JavaScript",
     "WebDriverIo",
     "Java",

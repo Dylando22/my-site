@@ -20,6 +20,11 @@ export const darkTheme = createTheme({
       dark: grey[400], //searchBar Background
       main: "#000", //CardBackground
     },
+    random: {
+      activeLink: grey[50],
+      unactiveLink: grey[900],
+      cardBackground: "black",
+    },
     // error: {
     //   // light: "",
     //   // dark: "",

@@ -26,6 +26,7 @@ export default function History() {
           position={item.position}
           content={item.content}
           dateRange={item.dateRange}
+          additionalDetails={item.additionalDetails}
         />
       ))}
     </Box>

@@ -1,5 +1,5 @@
 import { Box, createTheme, ThemeProvider } from "@mui/material";
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Header from "./components/Header";
 import VerticalNavbar from "./components/VerticalNavbar";
 import { darkTheme } from "./theme/dark";
@@ -24,20 +24,55 @@ export default function App() {
   // toggle the mode of the screen.
   const [mode, setMode] = useState("light");
 
+  const [activeBar, setActiveBar] = useState<boolean[]>([
+    false,
+    false,
+    false,
+    false,
+  ]);
+
   //get correct theme from themes folder by using the memorized state
   const theme = useMemo(
     () => createTheme(mode === "light" ? lightTheme : darkTheme),
     [mode]
   );
+
+  useEffect(() => {
+    let url = window.location.hash;
+    console.log(window.location);
+    console.log(url);
+    if (url.includes("/projects")) {
+      setActiveBar([false, false, false, true]);
+    } else if (url.includes("/history")) {
+      setActiveBar([false, false, true, false]);
+    } else if (url.includes("/about")) {
+      setActiveBar([false, true, false, false]);
+    } else if (url === "#/" || url === "") {
+      setActiveBar([true, false, false, false]);
+    } else {
+      setActiveBar([false, false, false, false]);
+    }
+  }, []);
+
   // This is the mui function to create your own custom palette of colors.
   return (
     <ThemeProvider theme={theme}>
       <Box bgcolor="background.default" color={"text.primary"}>
         <Router basename="/">
-          <VerticalNavbar />
-          <Box sx={{ marginLeft: "60px" }}>
+          <VerticalNavbar
+            mode={mode}
+            setMode={setMode}
+            activeBar={activeBar}
+            setActiveBar={setActiveBar}
+          />
+          <Box sx={{ marginLeft: { xs: "60px", sm: "0px" } }}>
             <ScrollToTop />
-            <Header mode={mode} setMode={setMode} />
+            <Header
+              mode={mode}
+              setMode={setMode}
+              activeBar={activeBar}
+              setActiveBar={setActiveBar}
+            />
             <Routes>
               <Route path="/">
                 <Route index element={<Home />} />
