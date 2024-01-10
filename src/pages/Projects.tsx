@@ -19,6 +19,7 @@ import GameCenter from "../assets/gameCenter.png";
 import Blocks from "../assets/blocks.png";
 import Maze from "../assets/maze.png";
 import Water from "../assets/water.jpg";
+import Hat from "../assets/hat.jpg";
 
 export default function Projects() {
   return (
@@ -92,11 +93,17 @@ export default function Projects() {
             description="A webpage I made for a friend needing water flow statistics. Data is provided from USGS."
             path="/water-stats"
           />
-          <ProjectCard
+          {/* <ProjectCard
             title="Budget Maker"
             image={Water}
             description="A web app that takes in inputs and categories and exports a downloadable excel budget."
             path="/budget"
+          /> */}
+          <ProjectCard
+            title="Secret Santa"
+            image={Hat}
+            description="An web page made to help a randomized sorting of people. This is perfect for 'secret santa' like sorting"
+            path="/random-hat-selection"
           />
           <ProjectCard
             title="Gamers 3000"

@@ -48,17 +48,17 @@ export default function About() {
           justifyContent: "center",
         }}
         height={{ xs: "auto", md: "500px" }}
-        bgcolor="secondary.main"
       >
         <img alt="about-pic" className="about-pic" src={Pic}></img>
-        <Box marginLeft="5px">
+        <Box marginLeft="30px">
           <Typography variant="h3">Dylan Spencer</Typography>
-          <Typography variant="h5">
-            Student | Utah State University | December 2023
+          <Typography variant="h5">Software Developer</Typography>
+          <Typography variant="h6">
+            Degree: BS - Computer Science with Spanish minor
           </Typography>
           <Typography variant="h6">Age: 24</Typography>
           <Typography variant="h6">GPA: 3.85</Typography>
-          <Typography marginTop="20px">
+          <Typography marginTop="20px" width="90%">
             Hi, I'm Dylan Spencer. I'm from Stansbury Park Utah and my wife and
             I have a little baby boy. I love coding and developing apps or
             websites. My core values consist of having integrity, being honest,
@@ -71,7 +71,7 @@ export default function About() {
           </Typography>
         </Box>
       </Box>
-      <Typography variant="h4" textAlign="center">
+      <Typography marginTop="45px" variant="h4" textAlign="center">
         Two truths and one lie
       </Typography>
       <Typography textAlign="center" variant="h5">
@@ -81,6 +81,7 @@ export default function About() {
         sx={{
           display: "flex",
           margin: "auto",
+          marginBottom: "30px",
           flexDirection: { xs: "column", sm: "row" },
           justifyContent: "space-around",
           maxWidth: "700px",

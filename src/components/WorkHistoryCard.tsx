@@ -66,7 +66,7 @@ export default function WorkHistoryCard({
                 cursor: "pointer",
               }}
             >
-              Additional Details
+              {open ? "Close" : "Additional Details"}
             </Typography>
             <Collapse in={open}>
               <List

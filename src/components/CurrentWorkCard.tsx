@@ -1,6 +1,6 @@
 import {
   Avatar,
-  Box,
+  Card,
   CardContent,
   CardHeader,
   Typography,
@@ -25,23 +25,22 @@ export default function CurrentWorkCard({
   image,
 }: Props) {
   return (
-    <Box
+    <Card
       sx={{
         margin: "auto",
-        marginTop: "25px",
-        padding: "10px",
+        backgroundColor: "secondary.main",
         borderRadius: "15px",
-        width: { xs: "300px", sm: "450px", md: "750px" },
+        width: { xs: "90%", sm: "85%", md: "75%" },
+        // width: "75%",
       }}
     >
       <CardHeader
-        titleTypographyProps={{ fontSize: 28 }}
+        titleTypographyProps={{ fontSize: 28, width: "90%" }}
         title={location}
         subheaderTypographyProps={{ color: "lightgrey" }}
         subheader={dateRange}
         sx={{
           color: "common.white",
-          margin: "0px",
           bgcolor: "primary.main",
           width: "100%",
           borderTopRightRadius: "5px",
@@ -49,7 +48,12 @@ export default function CurrentWorkCard({
         }}
         avatar={<Avatar sx={{ width: 75, height: 75 }} src={image} />}
       />
-      <CardContent sx={{ backgroundColor: "secondary.main", width: "100%" }}>
+      <CardContent
+        sx={{
+          margin: "auto",
+          width: "90%",
+        }}
+      >
         <Typography marginTop="10px" variant="h5">
           {position}
         </Typography>
@@ -65,6 +69,6 @@ export default function CurrentWorkCard({
           ))}
         </ul>
       </CardContent>
-    </Box>
+    </Card>
   );
 }

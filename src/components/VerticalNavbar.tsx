@@ -62,13 +62,15 @@ export default function Hello({
   return (
     <Box
       sx={{
-        display: { xs: "flex", sm: "none" },
+        display: "flex",
+        visibility: { xs: "visible", sm: "hidden" },
       }}
     >
       <Box
         sx={{
           height: "100%",
           width: "60px",
+          top: "0",
           position: "fixed",
           bgcolor: "primary.dark",
           color: "white",

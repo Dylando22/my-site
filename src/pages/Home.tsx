@@ -63,7 +63,6 @@ export default function Home() {
           margin: "auto",
           paddingTop: "20px",
           paddingBottom: "20px",
-          backgroundColor: "secondary.main",
           alignItems: { xs: "center", md: "normal" },
         }}
       >
@@ -71,7 +70,7 @@ export default function Home() {
         <Box>
           <Typography
             fontSize={{ sm: 16, md: 18, lg: 20 }}
-            marginLeft="15px"
+            margin="30px"
             variant="body1"
           >
             Dylan Spencer is a Computer Science Major currently studying at Utah
@@ -84,8 +83,8 @@ export default function Home() {
           </Typography>
           <Typography
             fontSize={{ sm: 16, md: 18, lg: 20 }}
+            margin="30px"
             marginTop="15px"
-            marginLeft="15px"
             variant="body1"
           >
             Dylan built this webpage as a resume or portfolio for easily
@@ -150,13 +149,7 @@ export default function Home() {
       >
         Favorite Projects
       </Typography>
-      <Box
-        display="flex"
-        justifyContent="center"
-        flexGrow={1}
-        paddingTop={5}
-        bgcolor="darkgrey"
-      >
+      <Box display="flex" justifyContent="center" flexGrow={1} paddingTop={5}>
         <Grid
           container
           spacing={1}

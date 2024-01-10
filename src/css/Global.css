@@ -1,6 +1,8 @@
 .family-pic {
     width: 350px;
     height: 350px;
+    margin-left: 50px;
+    border-radius: 5px;
 }
 
 .profile-pic {
@@ -18,7 +20,9 @@
 .about-pic {
     height: 100%;
     max-height: 500px;
-    max-width: 400px;
+    max-width: 350px;
+    margin-left: 50px;
+    border-radius: 5px;
 }
 
 a {
@@ -30,6 +34,11 @@ a {
     .family-pic {
       width: auto;
       height: 400px;
+      margin-left: 0;
+    }
+
+    .about-pic{
+        margin: auto;
     }
   }
 
