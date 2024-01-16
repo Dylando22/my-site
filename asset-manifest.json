@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-site/static/css/main.060c3a80.css",
-    "main.js": "/my-site/static/js/main.0878aaba.js",
+    "main.css": "/my-site/static/css/main.21415950.css",
+    "main.js": "/my-site/static/js/main.d88364fa.js",
     "static/media/family2.jpg": "/my-site/static/media/family2.10acaa51eda32def2531.jpg",
     "static/media/profile.png": "/my-site/static/media/profile.4dcde82fbd67f59eb4f1.png",
     "static/media/full.jpg": "/my-site/static/media/full.92d043b2d2cb48044240.jpg",
@@ -19,11 +19,11 @@
     "static/media/chad_logo.png": "/my-site/static/media/chad_logo.31cd10af067cf27d1025.png",
     "static/media/nuke.png": "/my-site/static/media/nuke.6a19ae519d7a6277a708.png",
     "index.html": "/my-site/index.html",
-    "main.060c3a80.css.map": "/my-site/static/css/main.060c3a80.css.map",
-    "main.0878aaba.js.map": "/my-site/static/js/main.0878aaba.js.map"
+    "main.21415950.css.map": "/my-site/static/css/main.21415950.css.map",
+    "main.d88364fa.js.map": "/my-site/static/js/main.d88364fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.060c3a80.css",
-    "static/js/main.0878aaba.js"
+    "static/css/main.21415950.css",
+    "static/js/main.d88364fa.js"
   ]
 }
