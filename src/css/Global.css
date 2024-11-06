@@ -1,0 +1,61 @@
+.family-pic {
+    width: 350px;
+    height: 350px;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+
+.profile-pic {
+    width: 100%;
+    align-self: center;
+    border-radius: 15%;
+}
+
+.project-pic {
+    max-width: 250px;
+    height: 130px;
+    border-radius: 5px;
+}
+
+.about-pic {
+    height: 100%;
+    max-height: 500px;
+    max-width: 350px;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 900px) {
+    .family-pic {
+      width: auto;
+      height: 400px;
+      margin-left: 0;
+    }
+
+    .about-pic{
+        margin: auto;
+    }
+  }
+
+.Link {
+    margin: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.active {
+    color: blue
+    
+}
+
+.logo-pic {
+    width: 125px;
+}
+
+.header-logo {
+    width: 60px;
+}
