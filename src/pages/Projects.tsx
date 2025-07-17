@@ -19,6 +19,7 @@ import Blocks from "../assets/blocks.png";
 import Maze from "../assets/maze.png";
 import Water from "../assets/water.jpg";
 import Hat from "../assets/hat.jpg";
+import Groceries from "../assets/groceries.jpg";
 
 export default function Projects() {
   return (
@@ -92,12 +93,12 @@ export default function Projects() {
             description="A webpage I made for a friend needing water flow statistics. Data is provided from USGS."
             path="/water-stats"
           />
-          {/* <ProjectCard
-            title="Budget Maker"
-            image={Water}
+          <ProjectCard
+            title="Grocery Helper"
+            image={Groceries}
             description="A web app that takes in inputs and categories and exports a downloadable excel budget."
-            path="/budget"
-          /> */}
+            path="/grocery-helper"
+          />
           <ProjectCard
             title="Secret Santa"
             image={Hat}

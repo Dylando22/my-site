@@ -30,6 +30,7 @@ import {
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/Global.css";
+import ProfilePic from "../assets/profile.png";
 
 interface Props {
   mode: string;
@@ -77,19 +78,20 @@ export default function Hello({
           textAlign: "center",
           boxShadow: 3,
         }}
-        onMouseOver={() => setOpen(true)}
       >
-        <Menu
-          sx={{
-            marginTop: "15px",
-            fontSize: 40,
-          }}
-        />
+        <IconButton onClick={() => setOpen(true)}>
+          <Menu
+            sx={{
+              color: "white",
+              marginTop: "15px",
+              fontSize: 40,
+            }}
+          />
+        </IconButton>
       </Box>
       <Drawer
         open={open}
         onClose={handleClose}
-        onMouseLeave={handleClose}
         sx={{
           width: 240,
           flexShrink: 0,
@@ -107,7 +109,6 @@ export default function Hello({
             color: "white",
             textAlign: "center",
           }}
-          onMouseLeave={handleClose}
         >
           <Box
             sx={{
@@ -130,7 +131,7 @@ export default function Hello({
                   <img
                     className="profile-pic"
                     alt="profile"
-                    src={"../assets/profile.png"}
+                    src={ProfilePic}
                   ></img>
                   <Typography margin="auto" variant="h5">
                     Dylan Spencer

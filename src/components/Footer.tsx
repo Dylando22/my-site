@@ -14,7 +14,6 @@ export default function Footer() {
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: "primary.dark",
-        color: "white",
       }}
     >
       <Box

@@ -11,6 +11,7 @@ import BudgetHome from "./budget/BudgetHome";
 import TriviaMenu from "./trivia/components/TriviaMenu";
 import TriviaGame from "./trivia/components/TriviaGame";
 import TriviaGameOver from "./trivia/components/TriviaGameOver";
+import GroceryHelper from "./pages/GroceryHelper";
 
 const router = createHashRouter([
   {
@@ -28,6 +29,7 @@ const router = createHashRouter([
       { path: "water-stats", element: <WaterHome /> },
       { path: "budget", element: <BudgetHome /> },
       { path: "random-hat-selection", element: <RandomHat /> },
+      { path: "grocery-helper", element: <GroceryHelper /> },
     ],
   },
 ]);

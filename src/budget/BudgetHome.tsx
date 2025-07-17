@@ -1,9 +1,37 @@
 import { Box, Button, TextField, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router";
 
 export default function BudgetHome() {
   const [price, setPrice] = useState("0.0");
   const [description, setDescription] = useState("");
+  const location = useLocation();
+
+  useEffect(() => {
+    if (
+      location.search.includes("description") &&
+      location.search.includes("price")
+    ) {
+      let temp = location.search.split("&");
+      let urlDescription = temp[0].replace("?description=", "");
+      let urlPrice = temp[1].replace("price=", "");
+      setDescription(urlDescription);
+      setPrice(urlPrice);
+      const d = new Date();
+      const payload = {
+        date: d.toLocaleDateString(),
+        price: urlPrice,
+        description: urlDescription,
+      };
+      fetch(import.meta.env.VITE_APP_GOOGLE_SHEETS_URL, {
+        method: "POST",
+        body: JSON.stringify(payload),
+      }).then(() => {
+        setDescription("");
+        setPrice("");
+      });
+    }
+  }, [location.search]);
 
   const handleAddClick = () => {
     const d = new Date();
@@ -15,9 +43,10 @@ export default function BudgetHome() {
     fetch(import.meta.env.VITE_APP_GOOGLE_SHEETS_URL, {
       method: "POST",
       body: JSON.stringify(payload),
+    }).then(() => {
+      setDescription("");
+      setPrice("");
     });
-    setPrice("");
-    setDescription("");
   };
 
   const handlePriceChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -67,6 +96,7 @@ export default function BudgetHome() {
           variant="contained"
           color="success"
           sx={{ width: "60px" }}
+          id="add-button"
         >
           Add
         </Button>
